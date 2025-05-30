@@ -17,12 +17,9 @@ def main():
     #print("All products:")
     #manager.display_all_products()
 
-<<<<<<< HEAD
     #print(f"\nTotal inventory value: ${manager.total_inventory_value():.2f}")
-=======
     # Print total inventory value
-    print(f"\nTotal inventory value: ${manager.total_inventory_value():.2f}")
->>>>>>> add-cart-functionality
+    #print(f"\nTotal inventory value: ${manager.total_inventory_value():.2f}")
 
     # Create an instance of Cart
     cart = Cart()
