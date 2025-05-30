@@ -20,3 +20,14 @@ class ProductManager:
         total_value = sum(product.price * product.quantity for product in self.products)
         return total_value
     
+    def remove_product_by_name(self, name):
+        """
+        Remove a product from the inventory by its name.
+        """
+        for product in self.products:
+            if product.name == name:
+                self.products.remove(product)
+                print(f"Product '{name}' has been removed.")
+                return
+        print(f"Product '{name}' not found.")
+
